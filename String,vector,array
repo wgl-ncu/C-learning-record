@@ -2,7 +2,11 @@
 #include <string>
 #include <cctype>
 #include <vector>
+#include<cstddef>
+#include<iterator>
 using namespace std;
+string a[10];
+int b[10];
 int main()
 {
     //std::cout << "Hello World!\n";
@@ -20,147 +24,267 @@ int main()
         cout << s1;
     if (s2.size() > s1.size())
         cout << s2;*/
-    //string s,s1;
-    //while (cin >> s1)
-    //{
-    //    s += s1;
-    //    s += " ";
-    //}
-    //cout << s;
-    //string s("My Name");
-    //for (auto& c : s)
-    //    c=toupper(c);
-    //cout << s;
+        //string s,s1;
+        //while (cin >> s1)
+        //{
+        //    s += s1;
+        //    s += " ";
+        //}
+        //cout << s;
+        //string s("My Name");
+        //for (auto& c : s)
+        //    c=toupper(c);
+        //cout << s;
 
-    //string s("fds. v;'fd");
-    //for (char& c : s)
-    //    if (isalpha(c))
-    //        c = 'X';
-    //cout << s << endl;
-    //decltype(s.size())x = 0;
-    //while (x < s.size())
-    //{
-    //    if (isalpha(s[x]))
-    //        s[x] = 'X';
-    //    x++;
-    //}
-    //cout << s << endl;
-    //for (decltype(s.size())v = 0; v < s.size(); v++)
-    //    if (isalpha(s[v]))
-    //        s[v] = 'X';
-    //cout << s << endl;
+        //string s("fds. v;'fd");
+        //for (char& c : s)
+        //    if (isalpha(c))
+        //        c = 'X';
+        //cout << s << endl;
+        //decltype(s.size())x = 0;
+        //while (x < s.size())
+        //{
+        //    if (isalpha(s[x]))
+        //        s[x] = 'X';
+        //    x++;
+        //}
+        //cout << s << endl;
+        //for (decltype(s.size())v = 0; v < s.size(); v++)
+        //    if (isalpha(s[v]))
+        //        s[v] = 'X';
+        //cout << s << endl;
 
-    //const string s("fff;ds'f;");
-    //string ss;
-    //for (auto &c : s)
-    //    if (!ispunct(c))
-    //        ss += c;
-    //cout << ss;
-    //string s{ "assaa" };
+        //const string s("fff;ds'f;");
+        //string ss;
+        //for (auto &c : s)
+        //    if (!ispunct(c))
+        //        ss += c;
+        //cout << ss;
+        //string s{ "assaa" };
 
-    /*vector<int>v1;
-    for (int i = 1; i <= 100; i++)
-        v1.push_back(i);
-    vector<string>v2;
-    string ss;
-    while (cin>>ss)
-    {
-        v2.push_back(ss);
-    }
-    for (auto c : v2)
-        cout << c;*/
+        /*vector<int>v1;
+        for (int i = 1; i <= 100; i++)
+            v1.push_back(i);
+        vector<string>v2;
+        string ss;
+        while (cin>>ss)
+        {
+            v2.push_back(ss);
+        }
+        for (auto c : v2)
+            cout << c;*/
 
-    //vector<string>v;
-    //string s;
-    //while (cin >> s)
-    //    v.push_back(s);
-    //for (auto &c : v)
-    //    for (auto& d : c)
-    //        d = toupper(d);
-    //for (auto e : v)
-    //    cout << e << endl;
+            //vector<string>v;
+            //string s;
+            //while (cin >> s)
+            //    v.push_back(s);
+            //for (auto &c : v)
+            //    for (auto& d : c)
+            //        d = toupper(d);
+            //for (auto e : v)
+            //    cout << e << endl;
+
+            //vector<int>v;
+            //int a;
+            //while (cin >> a)
+            //    v.push_back(a);
+            //int sum = 0, s = 1;
+            //for (auto c : v)
+            //{
+            //    if (s % 2) {
+            //        sum += c; s++;
+            //    }
+            //    else
+            //    {
+            //        sum += c;
+            //        s = 1;
+            //        cout << sum << endl;
+            //        sum = 0;
+            //    }
+            //}
+
+            //vector<int>v;
+            //int a;
+            //while (cin >> a)
+            //    v.push_back(a);
+            //int s = v.size() / 2;
+            //for (int d = 0; d < s; d++)
+            //    cout << v[d] + v[v.size() - 1 - d]<<endl;
+
+            //vector<string>v7{ 10,"hi" };
+            //unsigned d =0;
+            //auto a = v7.begin(), b = v7.end();
+            //for (a; a != b; a++)
+            //{
+            //    d++;
+            //    cout << *a<<endl;
+            //
+            //}
+            //cout << d;
+
+            //vector<int>v{ 1,2,3,4,5,6,7,8,9,10 };
+            //auto a = v.begin(), b = v.end();
+            //for (a; a != b; a++)
+            //    *a *= 2;
+            //for (auto c : v)
+            //    cout << c<<endl;
+
+            //vector<int> v;
+            //int s;
+            //while (cin >> s)
+            //    v.push_back(s);
+            //auto a = v.begin(), b = v.end();
+            //int sum = 0;
+            //for (a; a != b; a++)
+            //{
+            //    if (sum == 0)
+            //        sum += *a;
+            //    else {
+            //        sum += *a;
+            //        cout << sum << endl;
+            //        sum = 0;
+            //    }
+        //}
+
+            //vector<int> v;
+            //int s;
+            //while (cin >> s)
+            //v.push_back(s);
+            //auto a = v.begin(), b = v.end();
+            //auto mid = (b - a) / 2; auto end = a + mid; int i = 1;
+            //for (a; a != end; a++,i++)
+            //    cout << *a+ *(b - i);
+
+            //vector<int>v(11, 0);
+            //unsigned grade;
+            //auto a = v.begin();
+            //while (cin >> grade)
+            //    if(grade<100)
+            //    ++* (a + grade / 10);
+            //for (auto c : v)
+            //    cout << c << endl;
+
+        //const unsigned a = 1;
+        //int c[a];
+        //int& d[a];
+        //string c[10];
+        //int d[10];
+        //cout  << d[0];
+        //constexpr size_t array_size = 10;
+        //int ia[array_size];
+        //for (size_t ix = 1; ix <= array_size; ++ix)
+        //ia[ix] = ix;
+
+        //int a[10]; int i = 0;
+        //for (auto& c : a)
+        //{
+        //    c = i; i++;
+        //}
+        //for (auto c : a)
+        //cout << c;
+        //int b[10]; i = 0;
+        //cout << endl;
+        //for (auto& c : b) {
+        //    c = a[i];
+        //    i++;
+        //}
+        //for (auto c : b)
+        //cout << c;
+        //}
 
     //vector<int>v;
-    //int a;
-    //while (cin >> a)
-    //    v.push_back(a);
-    //int sum = 0, s = 1;
-    //for (auto c : v)
+    //int i = 0;
+    //for (i;i<10;i++)
     //{
-    //    if (s % 2) {
-    //        sum += c; s++;
-    //    }
-    //    else
-    //    {
-    //        sum += c;
-    //        s = 1;
-    //        cout << sum << endl;
-    //        sum = 0;
-    //    }
+    //    v.push_back(i); 
     //}
-
-    //vector<int>v;
-    //int a;
-    //while (cin >> a)
-    //    v.push_back(a);
-    //int s = v.size() / 2;
-    //for (int d = 0; d < s; d++)
-    //    cout << v[d] + v[v.size() - 1 - d]<<endl;
-
-    //vector<string>v7{ 10,"hi" };
-    //unsigned d =0;
-    //auto a = v7.begin(), b = v7.end();
-    //for (a; a != b; a++)
-    //{
-    //    d++;
-    //    cout << *a<<endl;
-    //
-    //}
-    //cout << d;
-
-    //vector<int>v{ 1,2,3,4,5,6,7,8,9,10 };
-    //auto a = v.begin(), b = v.end();
-    //for (a; a != b; a++)
-    //    *a *= 2;
     //for (auto c : v)
-    //    cout << c<<endl;
-    
-    //vector<int> v;
-    //int s;
-    //while (cin >> s)
-    //    v.push_back(s);
-    //auto a = v.begin(), b = v.end();
-    //int sum = 0;
-    //for (a; a != b; a++)
-    //{
-    //    if (sum == 0)
-    //        sum += *a;
-    //    else {
-    //        sum += *a;
-    //        cout << sum << endl;
-    //        sum = 0;
-    //    }
+    //    cout << c;
+    //vector<int>v2;
+    //for (auto c : v)
+    //    v2.push_back(c);
+    //for (auto c : v2)
+    //    cout << c;
+
+//int a[10];
+//int* b = begin(a);
+//int* c = end(a);
+//cout << b + 1;
+
+//int a[10];
+//int* b = begin(a);
+//int* c = end(a);
+//while (b != c)
+//{
+//    *b = 0;
+//    b++;
 //}
+//for (auto c : a)
+//cout << c;
 
-    //vector<int> v;
-    //int s;
-    //while (cin >> s)
-    //v.push_back(s);
-    //auto a = v.begin(), b = v.end();
-    //auto mid = (b - a) / 2; auto end = a + mid; int i = 1;
-    //for (a; a != end; a++,i++)
-    //    cout << *a+ *(b - i);
+//int a[2] = { 1,1 }, b[3] = { 1,2,3};
+//int* abegin = begin(a);
+//int* aend = end(a);
+//int* bend = end(b);
+//int* bbegin = begin(b);
+//int sizea = aend - abegin, sizeb = bend - bbegin;
+//if (sizea != sizeb)cout << "not equal";
+//else {
+//    while (abegin != aend) {
+//        if (*abegin != *bbegin)
+//        {
+//            cout << "not equal";
+//            break;
+//        }
+//        else { abegin++; bbegin++; }
+//    }
+//
+//}
+//if (abegin == aend)
+//cout << "equal";
 
-    //vector<int>v(11, 0);
-    //unsigned grade;
-    //auto a = v.begin();
-    //while (cin >> grade)
-    //    if(grade<100)
-    //    ++* (a + grade / 10);
-    //for (auto c : v)
-    //    cout << c << endl;
+//vector<int >v1{ 1,2};
+//vector<int>v2{ 1,1 };
+//auto v1b = v1.begin();
+//auto v1e = v1.end();
+//auto v2b = v2.begin();
+//auto v2e = v2.end();
+//auto size1 = v1e - v1b;
+//auto size2 = v2e - v2b;
+//if (size1 != size2)cout << "not same";
+//else {
+//    while (v1b != v1e) {
+//        if (*v1b != *v2b) {
+//            cout << "not same";
+//            break;
+//        }
+//        else
+//        {
+//            v1b++; v2b++;
+//        }
+//    }
+//}
+//if (v1b == v1e)cout << "same";
 
-        
+//int a[] = { 1,2,3,4,5 };
+//vector<int> v1 (begin(a), end(a));
+//for (auto c : v1)
+//cout << c;
+
+    //int ia[3][4] = { 0,1,2,3,4,5,6,7,8,9,10,11 };
+    //for (int (& c)[4] : ia)
+    //    for (int B : c)
+    //        cout << B;
+    //cout << endl;
+    //for (int i = 0; i < 3; i++)
+    //    for (int j = 0; j < 4; j++)
+    //        cout << ia[i][j];
+    //cout << endl;
+    //int(*p)[4] = ia;
+    //for (p; p != end(ia); p++)
+    //    for (int* q = begin(*p); q != end(*p); q++)
+    //        cout << *q;
     
+
 
 }
