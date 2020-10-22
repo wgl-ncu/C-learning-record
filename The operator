@@ -1,0 +1,49 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    //int i = 0;
+    //while(i!=3)
+    //cout << i << ++i;
+
+    /*int c;
+    while (cin >> c && c != 42);
+    cout << "结束了";*/
+
+ /*   int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    while (a > b && b > c && c > d)
+    {
+        cout << "ok"; break;
+    }*/
+
+    //int ival = -1;
+    //if (ival++ && ival)
+    //    cout << "ok";
+    //vector<int>v{ 5,8 };
+    //if (v[ival++] <= v[ival])
+    //    cout << "ok";
+
+    //vector<string>::iterator iter;
+    //vector<string> thiss{"hello", "world", "thanks"};
+    //iter = thiss.begin();
+    //*iter++; (*iter)++; *iter.empty(); iter->empty(); ++* iter; iter++->empty();
+
+    //vector<int>s{ 1,2,3,4,5,6,7,8,9 };
+    //for (auto& c : s)
+    //   c= c % 2 ? c * 2 : c;
+    //for (auto c : s)
+    //    cout << c<<endl;
+
+    //unsigned grade;
+    //while (cin >> grade && grade <= 100) {
+    //    string finalgrade = (grade > 90) ? "high pass" : ((grade > 75) ? "pass" : ((grade > 60) ? "low pass" : "fail")); 
+    //    cout << finalgrade<<endl;
+    //}
+
+    int x[10]; int* p = x;
+    cout << sizeof(x) / sizeof(*x) << endl;
+    cout << sizeof(p) / sizeof(*p) << endl;
+}
