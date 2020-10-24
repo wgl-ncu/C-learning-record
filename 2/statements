@@ -1,0 +1,131 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	//unsigned grade;
+	//string scores;
+	//while (cin >> grade && grade <= 100)
+	//{
+	//	if (grade == 100)scores = "A++";
+	//	else {
+	//		if (grade >= 90)scores = "A";
+	//		else {
+	//			if (grade >= 80)scores = "B";
+	//			else {
+	//				if (grade >= 70)scores = "C";
+	//				else {
+	//					if (grade >= 60)scores = "D";
+	//					else scores = "F";
+	//				}
+	//			}
+	//		}
+	//		cout << scores;
+	//	}
+	//}
+	//while (cin >> grade && grade <= 100) {
+	//	scores = (grade == 100) ? "A++" : ((grade >= 90) ? "A" : ((grade >= 80) ? "B" : ((grade >= 70) ? "C" : ((grade >= 60) ? "D" : "F"))));
+	//	cout << scores;
+	//}
+
+	//string ss{ "aei ou	aAEIOUfdjs" };
+	//ss.append("aa/n");
+	//ss.append("sasa");
+	//cout <<ss;
+	//unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
+	//string::iterator s = begin(ss);
+	//for(s;s!=end(ss);++s)
+	//	switch (*s) {
+	//	case ' ':
+	//	case 'A':
+	//		++aCnt; break;
+	//	case 'e':
+	//	case 'E':
+	//		++eCnt; break;
+	//	case 'i':
+	//	case 'I':
+	//		++iCnt; break;
+	//	case 'o':
+	//	case 'O':
+	//		++oCnt; break;
+	//	case 'u':
+	//	case 'U':
+	//		++uCnt; break;
+	//	default:;
+	//	}
+	//cout << "a=" << aCnt << endl;
+	//cout << "e=" << eCnt << endl;
+	//cout << "i=" << iCnt << endl;
+	//cout << "o=" << oCnt << endl;
+	//cout << "u="<<uCnt << endl;
+
+//	vector<string> ss;
+//	string s,a,b,d;
+//	int biggest=0, num=0;
+//	while (cin >> s)
+//		ss.push_back(s);
+//	b = *ss.begin();
+//	for (auto c : ss)
+//	{
+//		
+//		a = c;
+//		if (a == b)
+//		{
+//			num++;
+//			if (num > biggest)
+//			{
+//				biggest = num; d = b;
+//			}
+//		}
+//		else
+//		{
+//			num = 1;
+//			b = a;
+//		}
+//	}
+//	cout << d << endl;
+//	cout << biggest;
+
+
+	/*vector<int>a{ 0,1,1,3 }, b{ 0,1,1,2,3,4 };
+	int smallSize, i;
+	if (a.size() > b.size())
+		smallSize = b.size();
+	else
+		smallSize = a.size();
+	for (i = 0; i < smallSize; i++)
+		if (a[i] != b[i]) {
+			cout << "false"; break;
+		}
+	if (i == smallSize)
+		cout << "true";*/
+
+	//string ss, lasts;;
+	//while (cin >> ss)
+	//{
+	//	if (islower(ss[0]))continue;
+	//	if (lasts == ss)
+	//		break;
+	//	else
+	//		lasts = ss;
+	//}
+	//cout << lasts;
+	
+	int a, b;
+	while (cin >> a >> b){
+		try { 
+		if (b == 0)throw runtime_error("error!!!");
+		cout << a / b;
+		}catch (runtime_error err) {
+			cout << err.what() << endl << "try again?enter y or n:";
+			char a;
+			cin >> a;
+			if (!cin || a == 'n')
+				break;
+		}
+	}
+
+
+
+	
+}
